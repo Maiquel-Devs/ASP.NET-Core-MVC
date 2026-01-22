@@ -1,0 +1,144 @@
+ProjetoMVC/                  --- Pasta principal do projeto
+├── Controllers/             --- Onde ficam os arquivos que controlam as rotas e ações
+│   └── HomeController.cs
+├── Models/                  --- Onde ficam os modelos de dados (opcional)
+├── Views/                   --- Onde ficam as páginas que o usuário verá
+│   ├── Home/                --- Páginas do HomeController
+│   │   ├── Index.cshtml
+│   │   └── Privacy.cshtml
+│   └── Shared/              --- Páginas usadas em várias partes (layouts)
+│       └── _Layout.cshtml
+├── wwwroot/                 --- Arquivos públicos como imagens, CSS e JS
+├── appsettings.json         --- Configurações do projeto
+├── Program.cs               --- Arquivo que configura e inicia o projeto
+└── ProjetoMVC.csproj        --- Arquivo do projeto .NET
+
+
+
+
+***** O que cada pasta faz *****
+
+
+/wwwroot
+
+Esta é a pasta onde ficam todos os arquivos que o navegador consegue acessar diretamente, como imagens, arquivos CSS (que deixam o site estiloso), arquivos JavaScript (que deixam o site interativo) e fontes.
+Quando um usuário abre seu site e o navegador carrega uma imagem ou um arquivo de estilo, ele está buscando esses arquivos dentro da pasta wwwroot.
+Se você colocar um arquivo fora dessa pasta, o navegador não consegue acessar diretamente.
+
+/Controllers
+
+Os controllers são responsáveis por receber os pedidos do navegador (chamados de requisições) e decidir o que fazer com eles.
+Eles funcionam como o “cérebro” do seu site: ao receber uma requisição (por exemplo, quando o usuário digita uma URL), o controller decide quais dados buscar, qual lógica executar e qual página mostrar.
+Por exemplo, se o usuário acessa a página de produtos, o controller de produtos vai buscar os dados dos produtos e enviar para a página ser exibida.
+
+/Models
+
+Aqui ficam as classes que representam os dados do seu sistema.
+Essas classes são “moldes” que descrevem como os dados são organizados.
+Por exemplo, se seu site trabalha com produtos, a model “Produto” vai ter as informações básicas de um produto, como nome, preço, quantidade, etc.
+Além disso, podem existir modelos específicos para ajudar a organizar os dados que vão para a tela, chamados ViewModels, que facilitam mostrar só as informações que a página precisa.
+
+/Views
+
+As views são os arquivos que realmente criam o que o usuário vê no navegador.
+Elas são como “modelos de página” que combinam HTML com informações que vêm do servidor.
+Quando o controller decide mostrar uma página, ele “passa” dados para uma view, que transforma esses dados em uma página HTML completa.
+As views são escritas usando a linguagem Razor, que permite misturar HTML com código C# para gerar conteúdo dinâmico.
+
+/Views/Home
+
+Cada controller geralmente tem uma pasta dentro da pasta Views com o mesmo nome.
+Por exemplo, o HomeController usa as páginas dentro da pasta Views/Home.
+Quando uma ação do HomeController é executada (como “Index”), o sistema busca por padrão a página Index.cshtml dentro dessa pasta para mostrar.
+
+/Views/Shared
+
+Essa pasta contém páginas que são usadas por várias outras páginas do site, para evitar repetição.
+O arquivo mais comum aqui é o _Layout.cshtml, que define a estrutura básica do site, como o cabeçalho, o rodapé e o menu.
+Todas as outras páginas “herdam” essa estrutura para manter o visual consistente e evitar que você precise repetir o mesmo código em várias páginas.
+
+
+
+
+***** Explicação Detalhada do Código "Program.cs" *****
+
+
+
+- O primeiro passo no código é criar o construtor da aplicação, que é feito pela linha:
+
+var builder = WebApplication.CreateBuilder(args);
+
+Essa linha prepara o ambiente da aplicação, carregando configurações, variáveis e serviços necessários para rodar.
+
+
+- Em seguida, adicionamos ao projeto o suporte ao padrão MVC (Model-View-Controller) com:
+
+builder.Services.AddControllersWithViews();
+
+Isso habilita o uso de controllers, que são responsáveis por receber as requisições, e views, que são as páginas exibidas ao usuário.
+
+
+- Depois de configurar os serviços, a aplicação é montada com:
+
+var app = builder.Build();
+
+A partir daqui, podemos definir como o aplicativo responderá às requisições.
+
+
+- Logo depois, existe uma verificação para saber se o ambiente é de produção (não desenvolvimento). Caso seja, o código executa:
+
+app.UseExceptionHandler("/Home/Error");
+
+que define uma página de erro amigável para o usuário, evitando mostrar mensagens técnicas, e
+
+app.UseHsts();
+
+que ativa uma política de segurança chamada HSTS, forçando o uso de HTTPS.
+
+
+- A próxima linha:
+
+app.UseHttpsRedirection();
+
+faz com que qualquer requisição feita via HTTP seja automaticamente redirecionada para HTTPS, garantindo que a comunicação seja segura.
+
+
+- A linha:
+
+app.UseStaticFiles();
+
+permite que arquivos estáticos, como imagens, arquivos CSS e JavaScript que estejam na pasta wwwroot, sejam acessados diretamente pelo navegador.
+
+
+- Em seguida, temos:
+
+app.UseRouting();
+
+que ativa o sistema de roteamento. Esse sistema interpreta a URL recebida e decide qual controller e qual método (ação) deverão responder.
+
+
+- Depois, vem:
+
+app.UseAuthorization();
+
+que habilita a verificação de permissões, garantindo que partes protegidas do site só sejam acessadas por usuários autorizados (caso exista autenticação).
+
+
+- A definição da rota padrão é feita por:
+
+app.MapControllerRoute(
+  name: "default",
+  pattern: "{controller=Home}/{action=Index}/{id?}");
+
+Essa rota indica que, se o usuário não especificar uma URL, o sistema vai chamar o método Index do controller Home.
+
+Ela também define que a URL pode conter três partes: o nome do controller, o nome da ação e um parâmetro opcional chamado id.
+
+Por exemplo, a URL /Produto/Detalhes/5 irá chamar o método Detalhes do ProdutoController, passando o valor 5 como id.
+
+
+- Por fim, a linha:
+
+app.Run();
+
+inicia o servidor e coloca a aplicação para rodar, escutando e respondendo às requisições dos usuários.
