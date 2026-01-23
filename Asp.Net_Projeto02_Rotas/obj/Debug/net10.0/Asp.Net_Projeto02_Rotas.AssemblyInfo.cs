@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Asp.Net_Projeto01_HellowAsp")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Asp.Net_Projeto02_Rotas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa855f4db8b40e1505e93df6bd2084a42a4fc4ba")]
-[assembly: System.Reflection.AssemblyProductAttribute("Asp.Net_Projeto01_HellowAsp")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Asp.Net_Projeto01_HellowAsp")]
+[assembly: System.Reflection.AssemblyProductAttribute("Asp.Net_Projeto02_Rotas")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Asp.Net_Projeto02_Rotas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
