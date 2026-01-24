@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Formulário de Pessoas";
+}
+
+<form asp-action="Processar" method="post">     <!-- asp-action="Processar" ele diz para procurar a função "Processar" no arquivo Controllers/HomerController.cs -->
+    <input name="Nome" placeholder="Digite o seu nome" />   <!-- "Nome" é a Chave  que vai para Models/Pessoas.cs-->
+    <input name="Idade" placeholder="Digite sua idade" />   <!-- "Idade" é a Chave que vai para Models/Pessoas.cs-->
+    <button type="submit">Adicionar na Lista</button>
+</form>
+
+<hr>
+
+<h3>Minha Lista:</h3>
+<ul>
+    @if (ViewBag.Pessoas != null) 
+    {
+        @foreach (dynamic p in ViewBag.Pessoas)     // "p" é a intancia da lista ViewBag.Pessoas
+        {
+            <li>@p.Nome - @p.Idade anos</li>
+        }
+    }
+</ul>

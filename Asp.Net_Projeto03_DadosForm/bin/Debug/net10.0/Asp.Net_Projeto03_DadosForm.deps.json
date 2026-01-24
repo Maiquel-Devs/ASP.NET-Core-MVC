@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Asp.Net_Projeto03_DadosForm/1.0.0": {
+        "runtime": {
+          "Asp.Net_Projeto03_DadosForm.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Asp.Net_Projeto03_DadosForm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
