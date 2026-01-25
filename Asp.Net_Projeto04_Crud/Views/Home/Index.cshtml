@@ -1,11 +1,11 @@
 ﻿@using Asp.Net_Projeto04_Crud.Models
-@model IEnumerable<Pessoa>
+@model IEnumerable<Pessoa>  // serve para avisar ao HTML que ele deve se preparar para lidar com vários registros vindos do banco de dados, e não apenas um.
 
 <h2>Cadastro de Pessoas (MySQL)</h2>
 
 <form asp-action="Adicionar" method="post">
-    <input name="Nome" placeholder="Nome" required />
-    <input name="Idade" type="number" placeholder="Idade" required />
+    <input name="Nome" placeholder="Digite seu Nome" required />
+    <input name="Idade" type="number" placeholder="Digite sua Idade" required />
     <button type="submit">Cadastrar no Banco</button>
 </form>
 
@@ -25,7 +25,7 @@
             <td>@p.Nome</td>
             <td>@p.Idade</td>
             <td>
-                <a asp-action="Editar" asp-route-id="@p.Id">Editar</a> | 
+                <a asp-action="Editar" asp-route-id="@p.Id">Editar</a>  <!--Vai para função Editar e depois o arquivo HTML --> 
                 <a asp-action="Excluir" asp-route-id="@p.Id">Excluir</a>
             </td>
         </tr>
