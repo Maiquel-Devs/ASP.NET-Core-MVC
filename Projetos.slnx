@@ -2,4 +2,5 @@
   <Project Path="Asp.Net_Projeto01_HellowAsp/Asp.Net_Projeto01_HellowAsp.csproj" />
   <Project Path="Asp.Net_Projeto02_Rotas/Asp.Net_Projeto02_Rotas.csproj" />
   <Project Path="Asp.Net_Projeto03_DadosForm/Asp.Net_Projeto03_DadosForm.csproj" />
+  <Project Path="Asp.Net_Projeto04_Crud/Asp.Net_Projeto04_Crud.csproj" />
 </Solution>

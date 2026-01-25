@@ -1,0 +1,33 @@
+﻿@using Asp.Net_Projeto04_Crud.Models
+@model IEnumerable<Pessoa>
+
+<h2>Cadastro de Pessoas (MySQL)</h2>
+
+<form asp-action="Adicionar" method="post">
+    <input name="Nome" placeholder="Nome" required />
+    <input name="Idade" type="number" placeholder="Idade" required />
+    <button type="submit">Cadastrar no Banco</button>
+</form>
+
+<hr />
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Ações</th>
+    </tr>
+    @foreach (var p in (List<Pessoa>)ViewBag.Pessoas)
+    {
+        <tr>
+            <td>@p.Id</td>
+            <td>@p.Nome</td>
+            <td>@p.Idade</td>
+            <td>
+                <a asp-action="Editar" asp-route-id="@p.Id">Editar</a> | 
+                <a asp-action="Excluir" asp-route-id="@p.Id">Excluir</a>
+            </td>
+        </tr>
+    }
+</table>
