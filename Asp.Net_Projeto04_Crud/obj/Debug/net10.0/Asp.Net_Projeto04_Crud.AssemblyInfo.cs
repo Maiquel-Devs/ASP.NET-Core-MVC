@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Asp.Net_Projeto04_Crud")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bfc5fe754275e0b603b2f4f967917ecca4b9c9d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+426a1e520edd7ced20a60ab879e729ed423f1323")]
 [assembly: System.Reflection.AssemblyProductAttribute("Asp.Net_Projeto04_Crud")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Asp.Net_Projeto04_Crud")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
