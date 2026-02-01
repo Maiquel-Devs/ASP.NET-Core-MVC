@@ -1,0 +1,15 @@
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\bin\Debug\net10.0\Asp.Net_Projeto05_TesteAPI.exe
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\bin\Debug\net10.0\Asp.Net_Projeto05_TesteAPI.deps.json
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\bin\Debug\net10.0\Asp.Net_Projeto05_TesteAPI.runtimeconfig.json
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\bin\Debug\net10.0\Asp.Net_Projeto05_TesteAPI.dll
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\bin\Debug\net10.0\Asp.Net_Projeto05_TesteAPI.pdb
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\obj\Debug\net10.0\Asp.Net_Projeto05_TesteAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\obj\Debug\net10.0\Asp.Net_Projeto05_TesteAPI.AssemblyInfoInputs.cache
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\obj\Debug\net10.0\Asp.Net_Projeto05_TesteAPI.AssemblyInfo.cs
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\obj\Debug\net10.0\Asp.Net_Projeto05_TesteAPI.csproj.CoreCompileInputs.cache
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\obj\Debug\net10.0\Asp.Net_Projeto05_TesteAPI.sourcelink.json
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\obj\Debug\net10.0\Asp.Net_Projeto05_TesteAPI.dll
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\obj\Debug\net10.0\refint\Asp.Net_Projeto05_TesteAPI.dll
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\obj\Debug\net10.0\Asp.Net_Projeto05_TesteAPI.pdb
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\obj\Debug\net10.0\Asp.Net_Projeto05_TesteAPI.genruntimeconfig.cache
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto05_TesteAPI\obj\Debug\net10.0\ref\Asp.Net_Projeto05_TesteAPI.dll
