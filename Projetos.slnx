@@ -4,4 +4,5 @@
   <Project Path="Asp.Net_Projeto03_DadosForm/Asp.Net_Projeto03_DadosForm.csproj" />
   <Project Path="Asp.Net_Projeto04_Crud/Asp.Net_Projeto04_Crud.csproj" />
   <Project Path="Asp.Net_Projeto05_TesteAPI/Asp.Net_Projeto05_TesteAPI.csproj" />
+  <Project Path="Asp.Net_Projeto06_TelaDeLogin/Asp.Net_Projeto06_TelaDeLogin.csproj" />
 </Solution>
