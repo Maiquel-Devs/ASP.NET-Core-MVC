@@ -128,7 +128,7 @@ C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto06_TelaDeLogi
 C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto06_TelaDeLogin\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto06_TelaDeLogin\obj\Debug\net10.0\scopedcss\bundle\Asp.Net_Projeto06_TelaDeLogin.styles.css
 C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto06_TelaDeLogin\obj\Debug\net10.0\scopedcss\projectbundle\Asp.Net_Projeto06_TelaDeLogin.bundle.scp.css
-C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto06_TelaDeLogin\obj\Debug\net10.0\compressed\bu5du2b8lz-{0}-b9sayid5wm-b9sayid5wm.gz
+C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto06_TelaDeLogin\obj\Debug\net10.0\compressed\bu5du2b8lz-{0}-r379l8ah8u-r379l8ah8u.gz
 C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto06_TelaDeLogin\obj\Debug\net10.0\compressed\vutq8hw4h8-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto06_TelaDeLogin\obj\Debug\net10.0\compressed\3lkzsriy1k-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\Maiquel\Documents\Estudos\ASP.NET-Core-MVC\Asp.Net_Projeto06_TelaDeLogin\obj\Debug\net10.0\compressed\pfm073vvp9-{0}-bqjiyaj88i-bqjiyaj88i.gz
