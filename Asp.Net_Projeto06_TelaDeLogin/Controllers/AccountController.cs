@@ -29,7 +29,7 @@ public class AccountController : Controller
 
         banco.SaveChanges();
 
-        return RedirectToAction("Login", "Home");   // Redireciona para Login no HomeController.cs, que redireciona para Login no AccountController.cs
+        return RedirectToAction("Login");   // Views/Account/Login.cshtml
     }
 
 
@@ -51,13 +51,13 @@ public class AccountController : Controller
         if (usuario == null)
         {
             ViewBag.Erro = "Usuário ou senha inválidos.";
-            return View("Login");   // Volta para Login no HomeController.cs, que redireciona para Login no AccountController.cs, que exibe a mensagem de erro
+            return View("Login");   // Views/Account/Login.cshtml
         }
 
         // Se encontrar, cria um "carimbo" de login na sessão
         HttpContext.Session.SetString("UsuarioLogado", usuario.Nome);
 
-        return RedirectToAction("Index", "Home");   // Controller/HomeController.cs função Index()
+        return RedirectToAction("Index", "Home");   // Index do HomeController.cs (Views/Home/Index.cshtml) , ele teria que passar pelo HomeController.cs pois lá é onde está a rota de processamento do Index.cshtml. Se eu colocar o RedirectToAction("Index") ele vai procurar o Index dentro do AccountController.cs, e não vai encontrar, por isso tem que especificar o Home)
     }
 
 }

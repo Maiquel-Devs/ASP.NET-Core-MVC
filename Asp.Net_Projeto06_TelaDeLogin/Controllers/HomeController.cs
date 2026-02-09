@@ -6,7 +6,7 @@ namespace Asp.Net_Projeto06_TelaDeLogin.Controllers;
 
 public class HomeController : Controller
 {
-    public IActionResult Index()    // Usado para links apos logar (se eu criar um outro arquivo e quiser criar um link para voltar nele eu uso essa função Index no HomeController.cs)
+    public IActionResult Index()
     {
         // Verifica se existe o "carimbo" de login na sessão
         if (HttpContext.Session.GetString("UsuarioLogado") == null)
@@ -16,18 +16,12 @@ public class HomeController : Controller
         }
 
         // Esta página só será vista depois que o usuário logar
-        return View();
+        return View();  // Views/Home/Index.cshtml
     }
+    
 
-    public IActionResult Login()
-    {
-        return RedirectToAction("Login", "Account"); // Vai para o arquivo AccountController.cs
-    }
+    // ------------------------------------------------------------------------------
 
-    public IActionResult CriarConta()
-    {
-        return RedirectToAction("CriarConta", "Account"); // Vai para o arquivo AccountController.cs
-    }
 
     public IActionResult Privacy()
     {
