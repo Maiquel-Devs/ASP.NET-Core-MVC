@@ -5,4 +5,5 @@
   <Project Path="Asp.Net_Projeto04_Crud/Asp.Net_Projeto04_Crud.csproj" />
   <Project Path="Asp.Net_Projeto05_TesteAPI/Asp.Net_Projeto05_TesteAPI.csproj" />
   <Project Path="Asp.Net_Projeto06_TelaDeLogin/Asp.Net_Projeto06_TelaDeLogin.csproj" />
+  <Project Path="Asp.Net_Projeto07_ProjetoAPI/Asp.Net_Projeto07_ProjetoAPI.csproj" />
 </Solution>

@@ -1,0 +1,60 @@
+﻿@model Asp.Net_Projeto07_ProjetoAPI.Models.StockViewModel
+
+@{
+    ViewData["Title"] = "Dashboard de Ações";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h1 class="display-4 mb-4 fw-bold text-primary">💰 Stock Search</h1>
+            <p class="text-muted mb-5">Olá, <strong>@Context.Session.GetString("UsuarioLogado")</strong>! Digite o código de uma ação mundial.</p>
+
+            <form asp-action="BuscarAcao" method="post" class="d-flex shadow-sm rounded-pill overflow-hidden mb-5">
+                <input type="text" name="symbol" class="form-control border-0 px-4 py-3" placeholder="Ex: IBM, AAPL, TSLA..." style="outline:none; box-shadow:none;">
+                <button type="submit" class="btn btn-primary px-5 fw-bold">Buscar</button>
+            </form>
+
+            @if (ViewBag.Erro != null)
+            {
+                <div class="alert alert-danger border-0 shadow-sm">@ViewBag.Erro</div>
+            }
+
+            @if (Model != null)
+            {
+                <div class="card border-0 shadow-lg rounded-4 animate__animated animate__fadeInUp">
+                    <div class="card-header bg-dark text-white py-3">
+                        <h2 class="mb-0">@Model.Symbol</h2>
+                        <small class="opacity-75">Última atualização: @Model.Date</small>
+                    </div>
+                    <div class="card-body p-5">
+                        <div class="row g-4">
+                            <div class="col-6 col-md-3">
+                                <span class="text-muted d-block mb-1">Abertura</span>
+                                <h4 class="fw-bold">@Model.Open</h4>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <span class="text-muted d-block mb-1">Máxima</span>
+                                <h4 class="fw-bold text-success">@Model.High</h4>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <span class="text-muted d-block mb-1">Mínima</span>
+                                <h4 class="fw-bold text-danger">@Model.Low</h4>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <span class="text-muted d-block mb-1">Fechamento</span>
+                                <h4 class="fw-bold text-primary">@Model.Close</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    body { background-color: #f8f9fa; }
+    .rounded-4 { border-radius: 1.5rem !important; }
+    .animate__animated { animation-duration: 0.8s; }
+</style>
