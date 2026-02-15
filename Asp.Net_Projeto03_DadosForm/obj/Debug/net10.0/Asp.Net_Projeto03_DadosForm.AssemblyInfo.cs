@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Asp.Net_Projeto03_DadosForm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a4fcc65f8cc4cac909ce768574bd7a55450c5f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10ac960ba964046239cb1174155dcf7384cc3fd1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Asp.Net_Projeto03_DadosForm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Asp.Net_Projeto03_DadosForm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
