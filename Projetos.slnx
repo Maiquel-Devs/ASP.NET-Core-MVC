@@ -6,5 +6,5 @@
   <Project Path="Asp.Net_Projeto05_TesteAPI/Asp.Net_Projeto05_TesteAPI.csproj" />
   <Project Path="Asp.Net_Projeto06_TelaDeLogin/Asp.Net_Projeto06_TelaDeLogin.csproj" />
   <Project Path="Asp.Net_Projeto07_ProjetoAPI/Asp.Net_Projeto07_ProjetoAPI.csproj" />
-  <Project Path="MeuProjetoMV/MeuProjetoMV.csproj" />
+  <Project Path="Asp.Net_Projeto08_SQLServer/Asp.Net_Projeto08_SQLServer.csproj" />
 </Solution>

@@ -1,0 +1,61 @@
+﻿@using Asp.Net_Projeto08_SQLServer.Models
+@{
+    ViewData["Title"] = "Cadastro de Usuários";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-sm mb-5">
+        <div class="card-header bg-dark text-white">
+            <h4 class="mb-0">Cadastrar Nova Pessoa</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="CadastrarPessoa" method="post" class="row g-3">
+                <div class="col-md-5">
+                    <label class="form-label">Nome</label>
+                    <input name="Nome" class="form-control" placeholder="Ex: João" required />
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Idade</label>
+                    <input name="Idade" type="number" class="form-control" placeholder="15" required />
+                </div>
+                <div class="col-md-4 d-flex align-items-end">
+                    <button type="submit" class="btn btn-success w-100">
+                         Salvar no SQL Server
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <hr />
+
+    <h3>Usuários Cadastrados</h3>
+    <table class="table table-hover mt-3">
+        <thead class="table-secondary">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (ViewBag.Usuarios != null)
+            {
+                foreach (var user in (List<Usuario>)ViewBag.Usuarios)
+                {
+                    <tr>
+                        <td>@user.Id</td>
+                        <td>@user.Nome</td>
+                        <td>@user.Idade</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="3" class="text-center">Nenhum dado encontrado no banco.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
