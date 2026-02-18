@@ -14,9 +14,9 @@ public class HomeController : Controller
 
     // Injetar o contexto do banco de dados no controlador
     public HomeController(AppDbContext context)
-        {
-            _context = context;
-        }
+    {
+        _context = context;
+    }
 
 
     public IActionResult Index()
