@@ -7,4 +7,5 @@
   <Project Path="Asp.Net_Projeto06_TelaDeLogin/Asp.Net_Projeto06_TelaDeLogin.csproj" />
   <Project Path="Asp.Net_Projeto07_ProjetoAPI/Asp.Net_Projeto07_ProjetoAPI.csproj" />
   <Project Path="Asp.Net_Projeto08_SQLServer/Asp.Net_Projeto08_SQLServer.csproj" />
+  <Project Path="Asp.Net_Projeto09_ProjetoFinTrack/Asp.Net_Projeto09_ProjetoFinTrack.csproj" />
 </Solution>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Asp.Net_Projeto01_HellowAsp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a7b28b4954d055983bab8abcfa35921846d4d5d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4444ee6b66e9606d29f6ccd3448f487d0a87a98c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Asp.Net_Projeto01_HellowAsp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Asp.Net_Projeto01_HellowAsp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
