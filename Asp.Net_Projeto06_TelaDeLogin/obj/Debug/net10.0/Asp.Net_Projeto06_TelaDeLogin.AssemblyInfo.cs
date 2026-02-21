@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Asp.Net_Projeto06_TelaDeLogin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4444ee6b66e9606d29f6ccd3448f487d0a87a98c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e19462eef70fe44568e728ec4c7083953c6f0099")]
 [assembly: System.Reflection.AssemblyProductAttribute("Asp.Net_Projeto06_TelaDeLogin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Asp.Net_Projeto06_TelaDeLogin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

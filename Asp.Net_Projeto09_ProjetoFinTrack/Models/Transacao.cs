@@ -11,10 +11,10 @@ public class Transacao
     public string Nome { get; set; }    // Ex: "Netflix" ou "Academia"
 
     [Required]
-    public string Categoria { get; set; }   // Ex: "Streamim" ou "Saude"
+    public string Categoria { get; set; }   // Ex: "Streaming" ou "Saude"
 
     [Required]
     public decimal Valor { get; set; }
 
-    public string Tipo { get; set; }    // Renda ou Despesa
+    public string Tipo { get; set; }    // Renda ou Despesa (Que vamos Definir no HomeController)
 }

@@ -1,0 +1,50 @@
+1 - FinTrack:
+
+O FinTrack é um gerenciador financeiro pessoal desenvolvido para oferecer controle total sobre ganhos e gastos de forma simples e visual.
+
+2 - Descrição do Projeto:
+
+O sistema permite que o usuário registre suas movimentações financeiras diárias, separando-as entre Rendas e Despesas. O diferencial está na visualização de dados, onde o usuário pode acompanhar o quanto da sua renda está sendo consumida através de um gráfico de barras e um indicador de porcentagem em tempo real.
+
+3 - O que foi usado (Stack):
+
+Linguagem: C#
+
+Framework: ASP.NET Core MVC (Versão 10)
+
+Banco de Dados: Entity Framework Core para persistência de dados.
+
+Front-end: Bootstrap 5 para o design e Chart.js para a geração de gráficos.
+
+Funcionalidades
+Dashboard: Exibe o total acumulado e a saúde financeira de forma visual.
+
+Lançamentos: Página única para cadastrar entradas e saídas.
+
+Tabela Inteligente: Histórico de gastos ordenado automaticamente pelo valor (do maior para o menor).
+
+Edição via Modal: Altere descrições ou valores sem precisar trocar de página.
+
+Exclusão: Sistema de busca por ID para remover registros com confirmação de segurança.
+
+4 - Indicadores Financeiros:
+
+O projeto foca em três pilares:
+
+Renda Total: Soma de todos os ganhos cadastrados.
+
+Despesas Totais: Soma de todos os custos.
+
+Comprometimento: Cálculo percentual que indica o quanto da receita está sendo gasto.
+
+5 - Objetivos Acadêmicos:
+
+Este projeto foi desenvolvido exclusivamente para fins de estudo e prática. O foco principal foi o aprendizado da lógica de funcionamento do ASP.NET Core MVC, explorando conceitos fundamentais como:
+
+    Padrão MVC: Organização de pastas e separação de responsabilidades entre Models, Views e Controllers.
+
+    Manipulação de Dados: Uso do Entity Framework Core para realizar operações de leitura, criação, edição e exclusão (CRUD) no banco de dados.
+
+    Comunicação Front-back: Envio de informações da Controller para a View via ViewBag e recebimento de dados via formulários.
+
+    Integração de Bibliotecas: Implementação do Chart.js para transformar dados do banco em informações visuais e uso de componentes dinâmicos do Bootstrap.
