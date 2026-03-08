@@ -1,0 +1,64 @@
+@{
+    ViewData["Title"] = "Praticar Vocabulário";
+}
+
+<div class="container text-center mt-5">
+    <div class="card shadow-lg mx-auto" style="max-width: 500px; border-radius: 20px;">
+        <div class="card-body p-5">
+            <p class="text-muted text-uppercase fw-bold">Como se diz em português?</p>
+            <h1 class="display-2 fw-bold text-primary mb-4">@ViewBag.Ingles</h1>
+
+            <hr class="mb-4">
+
+            <form id="quizForm" asp-action="Responder" method="post">
+                <input type="hidden" name="id" value="@ViewBag.Id" />
+                <input type="hidden" id="respostaEscolhida" name="answer" value="" />
+                
+                <div class="d-grid gap-3">
+                    @foreach (var alt in ViewBag.Alternativas)
+                    {
+                        @* Chamamos a função JS 'verificar' passando o botão e a resposta *@
+                        <button type="button" 
+                                onclick="verificar(this, '@alt', '@ViewBag.RespostaCorreta')" 
+                                class="btn btn-outline-dark btn-lg py-3 fw-bold alternate-btn">
+                            @alt
+                        </button>
+                    }
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a asp-controller="Dashboard" asp-action="Index" class="btn btn-outline-secondary rounded-pill px-4">
+            📊 Ir para o Gráfico de Desempenho
+        </a>
+    </div>
+</div>
+
+<script>
+    function verificar(botao, escolha, correta) {
+        // Desabilita todos os botões para evitar cliques duplos
+        const botoes = document.querySelectorAll('.alternate-btn');
+        botoes.forEach(b => b.style.pointerEvents = 'none');
+
+        if (escolha === correta) {
+            botao.classList.replace('btn-outline-dark', 'btn-success');
+            botao.innerHTML += ' ✅';
+        } else {
+            botao.classList.replace('btn-outline-dark', 'btn-danger');
+            botao.innerHTML += ' ❌';
+        }
+
+        // Aguarda 800ms para a pessoa ver a cor e depois envia o formulário
+        setTimeout(() => {
+            document.getElementById('respostaEscolhida').value = escolha;
+            document.getElementById('quizForm').submit();
+        }, 800);
+    }
+</script>
+
+<style>
+    .alternate-btn { transition: all 0.2s; border-width: 2px; }
+    .alternate-btn:hover { transform: scale(1.03); }
+</style>
