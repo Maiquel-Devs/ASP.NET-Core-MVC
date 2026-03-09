@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Asp.Net_Projeto10_VocabularioDiario.Data;
 using Asp.Net_Projeto10_VocabularioDiario.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace Asp.Net_Projeto10_VocabularioDiario.Controllers
 {
@@ -58,7 +57,7 @@ namespace Asp.Net_Projeto10_VocabularioDiario.Controllers
             ViewBag.Id = correta.Id;
             ViewBag.Alternativas = alternativas;
             
-            // ESSENCIAL: Envia a resposta correta para o JavaScript comparar na View
+            // Envia a resposta correta para o JavaScript
             ViewBag.RespostaCorreta = correta.Portugues; 
 
             return View();

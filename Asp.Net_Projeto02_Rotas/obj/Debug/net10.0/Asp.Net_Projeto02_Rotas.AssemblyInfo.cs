@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Asp.Net_Projeto02_Rotas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29de8d1c2721471c4cc113256d6fe0239e47c582")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58fb2206183b670745598c62e7f056d3a3ee13e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Asp.Net_Projeto02_Rotas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Asp.Net_Projeto02_Rotas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

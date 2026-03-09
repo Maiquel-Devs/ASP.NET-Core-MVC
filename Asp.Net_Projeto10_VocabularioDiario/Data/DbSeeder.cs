@@ -9,7 +9,7 @@ namespace Asp.Net_Projeto10_VocabularioDiario.Data
     {
         public static void Seed(ApplicationDbContext context)
         {
-            // 1. Só insere se o banco estiver vazio
+            // Só insere se o banco estiver vazio
             if (context.Palavras.Any()) return;
 
             var filePath = "Palavras.csv";
