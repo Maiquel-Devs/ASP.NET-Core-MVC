@@ -9,6 +9,8 @@ public class HomeController : Controller
 
     // Variável que guarda a lista de pessoas digitadas
     private static List<Pessoa> listaGeral = new List<Pessoa>();    // Lista gerada daquela classe Pessoa.cs
+
+    [HttpGet]   // Indica que esse método só responde a requisições GET
     public IActionResult Index()
     {
         
@@ -21,14 +23,15 @@ public class HomeController : Controller
     public IActionResult Processar(Pessoa input)    // ** Código responsável por gerar a função "Processar" do formulário HTML
     {
         listaGeral.Add(input);        // Guarda o que você digitou
-        ViewBag.Pessoas = listaGeral; // Atualiza a "sacola" que o HTML vai ler
-        return View("Index");         // Recarrega a mesma página com o dado novo
+    
+        return View("Index");         // Vai para a função "Index" que carrega a página Index.cshtml
     }
 
+
+    // Método Get são reponsáveis por carregar as páginas HTML
+    // Método Post são responsáveis por processar os dados de entradas (formulários)
+
     // ----------------------------------------------------------------------------------------------
-
-
-
 
     public IActionResult Privacy()
     {

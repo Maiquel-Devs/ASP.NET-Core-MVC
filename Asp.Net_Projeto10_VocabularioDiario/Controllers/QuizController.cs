@@ -13,6 +13,7 @@ namespace Asp.Net_Projeto10_VocabularioDiario.Controllers
             _context = context;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             // 1. Procura palavras que o utilizador ainda NÃO respondeu

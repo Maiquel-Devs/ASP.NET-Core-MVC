@@ -13,6 +13,7 @@ namespace Asp.Net_Projeto10_VocabularioDiario.Controllers
             _context = context;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             // Busca todos os registros incluindo os dados da palavra

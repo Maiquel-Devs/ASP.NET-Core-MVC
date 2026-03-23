@@ -6,6 +6,7 @@ namespace Asp.Net_Projeto06_TelaDeLogin.Controllers;
 
 public class HomeController : Controller
 {
+    [HttpGet]
     public IActionResult Index()
     {
         // Verifica se existe o "carimbo" de login na sessão

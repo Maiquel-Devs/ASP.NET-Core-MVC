@@ -18,6 +18,7 @@ public class HomeController : Controller
 
 
     // 1. TELA DO GRÁFICO (Index)
+    [HttpGet]
     public IActionResult Index()
     {
         // Busca todas as transações do banco
@@ -45,6 +46,7 @@ public class HomeController : Controller
 
 
     // 2. TELA DOS FORMULÁRIOS (Lancamentos)
+    [HttpGet]
     public IActionResult Lancamentos()
     {
         // Busca e ordena do mais caro para o mais barato
@@ -84,6 +86,7 @@ public class HomeController : Controller
 
 
     // 5. LOGICA PARA EXCLUIR
+    [HttpPost]
     public IActionResult Excluir(int id)
     {
         // Procura o ID para fazer a remoção

@@ -57,7 +57,8 @@ public class AccountController : Controller
         // Se encontrar, cria um "carimbo" de login na sessão
         HttpContext.Session.SetString("UsuarioLogado", usuario.Nome);
 
-        return RedirectToAction("Index", "Home");   // Index do HomeController.cs (Views/Home/Index.cshtml) , ele teria que passar pelo HomeController.cs pois lá é onde está a rota de processamento do Index.cshtml. Se eu colocar o RedirectToAction("Index") ele vai procurar o Index dentro do AccountController.cs, e não vai encontrar, por isso tem que especificar o Home)
+        return RedirectToAction("Index", "Home");   // Index do HomeController.cs (Controllers/Home) onde está a função Index() que processa o arquivo Index.html que fica em Views/Home/Index.cshtml, ou seja, o Index do HomeController.cs é o responsável por processar o arquivo Index.cshtml, e é para lá que eu quero redirecionar o usuário depois do login, por isso tem que ser RedirectToAction("Index", "Home")
+ 
     }
 
 }
